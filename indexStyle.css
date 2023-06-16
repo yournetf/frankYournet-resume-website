@@ -1,24 +1,26 @@
 html{
     height: 100%;
+    
 }
 
 body{
     padding: 0px;
     margin: 0px;
     background-image: url(pxfuel.jpg);
-    background-size: cover;
+    background-size:cover;
     background-repeat: no-repeat;
     background-position: center center;
 }
 
 
-h1{
+h1 a{
     padding-left: 5px;
     color: aliceblue;
+    text-decoration: none;
 }
 
 nav{
-    background-color: #243b55;
+    background-color: #000000;
     transition: ease-in;
     justify-content: space-around;
     align-items: center;
@@ -29,14 +31,15 @@ nav{
 
 
 li{
-
     letter-spacing: 1px;
-    background-color: #243b55;
+    background-color: #000000;
     padding-top: 10px;
     padding-left: 50px;
     padding-right: 50px;
     padding-bottom: 10px;
-    display: inline-block;
+    display: inline;
+    box-sizing: border-box;
+    box-shadow: 0px 10px 5px rgb(165, 172, 202);
 }
 
 
@@ -48,22 +51,89 @@ li{
 }
 
 .navOptions a{
-    
     color: rgb(255, 255, 255);
     text-decoration:none;
 }
 
 .navOptions li:hover{
-    border-radius: 30%;
-    background-color: rgb(207, 207, 207);
+    border-top-left-radius: 10%;
+    border-top-right-radius: 10%;
+    transition: all 0.3s;
+    border-width: 2px;
+    background-color: rgb(40, 37, 37);
+    transform: translateY(-10px);
 }
 
-#welcomeLabel{
-    color: aliceblue;
+#projectButton{
+    display: inline-block;
+    position:absolute;
+    margin: -3rem;
+    margin-left: 44rem;
+    width: 39.5rem;
+    height: 40.5rem;
+    border-radius: 100%;
+    background-color: transparent;
+    border-color: transparent;
+    color: transparent;
+    font-family:sans-serif;
+    
+}
+
+#projectButton:hover{
+    color: rgba(240, 248, 255, 0.656);
+    letter-spacing: 5px;
+    font-size: xx-large;
+    transition: ease-in-out 1.5s;
+    background-color: transparent;
+    border-color: transparent;
+    color: rgba(240, 248, 255, 0.404);
+    box-shadow: 50px 50px 50px rgba(238, 0, 139, 0.464), -50px -50px 50px rgba(238, 0, 139, 0.371), -50px 50px 50px rgba(238, 0, 139, 0.349), 50px -50px 50px rgba(238, 0, 139, 0.375);
+}
+
+#projectButton:not(:hover){
+    transition: ease-in-out 1.5s;
+    box-shadow: none;
+    background-color: transparent;
+    border-color: transparent;
+    color: transparent;
+   
+}
+
+#contactButton{
+    padding-bottom: 10rem;
+    display: inline-block;
+    position:absolute;
+    margin-top: 51rem;
+    margin-left: 44rem;
+    width: 40rem;
+    height: 40rem;
+    border-radius: 100%;
+    font-family:sans-serif;
+}
+
+#contactButton:hover{
+    color: rgba(240, 248, 255, 0.656);
+    letter-spacing: 5px;
+    font-size: xx-large;
+    transition: ease-in-out 1.5s;
+    background-color: transparent;
+    border-color: transparent;
+    color: rgba(240, 248, 255, 0.404);
+    box-shadow: 50px 50px 50px rgba(0, 135, 252, 0.464), -50px -50px 50px rgba(0, 135, 252, 0.464), -50px 50px 50px rgba(0, 135, 252, 0.464), 50px -50px 50px rgba(0, 135, 252, 0.464);
+}
+
+#contactButton:not(:hover){
+    transition: ease-in-out 1.5s;
+    box-shadow: none;
+    background-color: transparent;
+    border-color: transparent;
+    color: transparent;
+   
 }
 
 
-button{
+
+#beginButton{
     font-family: sans-serif;
     font-weight: bold;
     font-size: 40px;
@@ -81,7 +151,7 @@ button{
    transition: all 0.3s;
 }
 
-button:hover{
+#beginButton:hover{
     background-color: #365477;
     transform: translateY(-10px);
     border-color: var(--clr-accent);
@@ -89,29 +159,30 @@ button:hover{
     color: var(--clr-light);
 }
 
-@keyframes slideInLeft {
-    from{
-            transform: translateX(-600px);
-    }
-
-    to{
-        transform: translateX(0);
-    }
-    
+#moonButton{
+    display:table;
+    background: linear-gradient( rgba(122, 12, 12, 0.516),  rgba(18, 39, 58, 0.656) );
+    position:absolute;
+    margin-top: 20rem;
+    margin-left: 5rem;
+    width: 20rem;
+    height: 20rem;
+    border-radius: 100%;
+    border-color: rgba(0, 0, 0, 0.386);
+    font-family: 'Exo 2', sans-serif;
 }
 
-
-@keyframes slideInRight {
-from{
-    transform: translateX(1600px);
+#moon2Button{
+    display:table;
+    background: linear-gradient( rgba(3, 113, 223, 0.711),  rgba(9, 10, 11, 0.656) );
+    position:absolute;
+    margin-top: 20rem;
+    margin-left: 100rem;
+    width: 20rem;
+    height: 20rem;
+    border-radius: 100%;
+    font-family:sans-serif;
 }
-
-to{
-    transform: translateX(0);
-}
-
-}
-
 
 
 
@@ -694,12 +765,37 @@ to{
 
 @keyframes animStar {
     from {
-        transform: translateY(0px);
+        transform: translateY(0s);
     }
     to {
         transform: translateY(-2000px);
     }
 }
+
+@keyframes slideInLeft {
+    from{
+            transform: translateX(-600px);
+    }
+
+    to{
+        transform: translateX(0);
+    }
+    
+}
+
+
+@keyframes slideInRight {
+from{
+    transform: translateX(1600px);
+}
+
+to{
+    transform: translateX(0);
+}
+
+}
+
+
 
 
 
