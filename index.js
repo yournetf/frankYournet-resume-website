@@ -1,12 +1,16 @@
-
-
 document.getElementById("beginButton").onclick = function(){
     
     document.getElementById("beginButton").style.display = "none";
     document.getElementById("projectButton").style.display = "block";
     document.getElementById("contactButton").style.display = "block";
+    document.getElementById("moonButton").style.display = "block";
+    document.getElementById("moon2Button").style.display = "block";
   
 }
+
+
+
+
 
 let myDocument = document.documentElement;
 let btn = document.getElementById("beginButton");
@@ -41,4 +45,6 @@ beginButton.addEventListener("click", ()=>{
         btn.textContent = "Go Fullscreen";
     }
 });
+
+
 

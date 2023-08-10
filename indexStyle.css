@@ -75,13 +75,13 @@ li{
     background-color: transparent;
     border-color: transparent;
     color: transparent;
-    font-family:sans-serif;
+    font-family:'Exo 2', sans-serif;
     
 }
 
 #projectButton:hover{
     color: rgba(240, 248, 255, 0.656);
-    letter-spacing: 5px;
+    letter-spacing: 4px;
     font-size: xx-large;
     transition: ease-in-out 1.5s;
     background-color: transparent;
@@ -103,17 +103,17 @@ li{
     padding-bottom: 10rem;
     display: inline-block;
     position:absolute;
-    margin-top: 51rem;
-    margin-left: 44rem;
-    width: 40rem;
-    height: 40rem;
+    margin-top: 4rem;
+    margin-left: 45rem;
+    width: 38rem;
+    height: 37rem;
     border-radius: 100%;
     font-family:sans-serif;
 }
 
 #contactButton:hover{
     color: rgba(240, 248, 255, 0.656);
-    letter-spacing: 5px;
+    letter-spacing: 4px;
     font-size: xx-large;
     transition: ease-in-out 1.5s;
     background-color: transparent;
@@ -130,6 +130,7 @@ li{
     color: transparent;
    
 }
+
 
 
 
@@ -161,20 +162,52 @@ li{
 
 #moonButton{
     display:table;
-    background: linear-gradient( rgba(122, 12, 12, 0.516),  rgba(18, 39, 58, 0.656) );
+    background: linear-gradient( rgba(148, 94, 2, 0.516), rgba(4, 10, 15, 0.858),rgba(148, 94, 2, 0.516) ,rgba(4, 10, 15, 0.858), rgba(148, 94, 2, 0.516));
+    box-shadow: inset 10px 20px 30px black;
+    box-shadow: inset -10px -20px 50px black;
+    box-shadow: inset -10px -20px 70px black;
+    box-shadow: inset -10px -20px 90px black;
+    box-shadow: 10px 10px 10px rgba(115, 74, 1, 0.516), -10px -10px 10px rgba(115, 74, 1, 0.516), -10px 10px 10px rgba(115, 74, 1, 0.516), 10px -10px 10px rgba(115, 74, 1, 0.516);
     position:absolute;
     margin-top: 20rem;
     margin-left: 5rem;
     width: 20rem;
     height: 20rem;
     border-radius: 100%;
-    border-color: rgba(0, 0, 0, 0.386);
+    border-color: transparent;
     font-family: 'Exo 2', sans-serif;
+    transform: rotate(30deg);
+}
+
+#moonButton:hover{
+    color: rgba(240, 248, 255, 0.656);
+    letter-spacing: 3px;
+    font-size: x-large;
+    transition: ease-in-out 1.5s;
+    background-color: transparent;
+    border-color: transparent;
+    color: rgba(240, 248, 255, 0.404);
+    box-shadow: 50px 50px 50px  rgba(115, 74, 1, 0.516), -50px -50px 50px rgba(115, 74, 1, 0.516), -50px 50px 50px  rgba(115, 74, 1, 0.516), 50px -50px 50px  rgba(115, 74, 1, 0.516);
+}
+
+#moonButton:not(:hover){
+    transition: ease-in-out 1.5s;
+    box-shadow: 10px 10px 10px rgba(115, 74, 1, 0.516), -10px -10px 10px rgba(115, 74, 1, 0.516), -10px 10px 10px rgba(115, 74, 1, 0.516), 10px -10px 10px rgba(115, 74, 1, 0.516);
+    background-color: transparent;
+    border-color: transparent;
+    color: transparent;
 }
 
 #moon2Button{
+    position: absolute;
     display:table;
-    background: linear-gradient( rgba(3, 113, 223, 0.711),  rgba(9, 10, 11, 0.656) );
+    background: linear-gradient(rgba(122, 12, 12, 0.516), rgba(18, 39, 58, 0.858),  rgba(122, 12, 12, 0.392) , rgba(18, 39, 58, 0.858),  rgba(46, 6, 6, 0.516));
+    box-shadow: inset -10px -20px 30px black;
+    box-shadow: inset -10px -20px 50px black;
+    box-shadow: inset -10px -20px 70px black;
+    box-shadow: inset -10px -20px 90px black;
+    box-shadow: 10px 10px 10px rgba(24, 52, 77, 0.858), -10px -10px 10px rgba(25, 56, 82, 0.858), -10px 10px 10px rgba(27, 60, 89, 0.858), 10px -10px 10px rgba(27, 59, 88, 0.858);
+    border-color: transparent;
     position:absolute;
     margin-top: 20rem;
     margin-left: 100rem;
@@ -182,6 +215,43 @@ li{
     height: 20rem;
     border-radius: 100%;
     font-family:sans-serif;
+    transform: rotate(-30deg);
+}
+
+#moon2Button:hover{
+    color: rgba(240, 248, 255, 0.656);
+    letter-spacing: 3px;
+    font-size: x-large;
+    transition: ease-in-out 1.5s;
+    background-color: transparent;
+    border-color: transparent;
+    color: rgba(240, 248, 255, 0.404);
+    box-shadow: 50px 50px 50px  rgba(24, 52, 77, 0.858), -50px -50px 50px rgba(24, 52, 77, 0.858), -50px 50px 50px  rgba(24, 52, 77, 0.858), 50px -50px 50px  rgba(24, 52, 77, 0.858);
+}
+
+#moon2Button:not(:hover){
+    transition: ease-in-out 1.5s;
+    box-shadow: 10px 10px 10px rgba(24, 52, 77, 0.858), -10px -10px 10px rgba(24, 52, 77, 0.858), -10px 10px 10px rgba(24, 52, 77, 0.858), 10px -10px 10px rgba(24, 52, 77, 0.858);
+    background-color: transparent;
+    border-color: transparent;
+    color: transparent;
+}
+
+#moonButtonText{
+    display: inline-block;
+    transform: rotate(-30deg);
+}
+
+#moon2ButtonText{
+    display: inline-block;
+    transform: rotate(30deg);
+}
+
+#womanInBoat{
+    width: 10%;
+    margin-left: -8rem;
+    margin-top: 35.05rem;
+    animation: rowBoat 45s linear 0s infinite normal;
 }
 
 
@@ -793,6 +863,15 @@ to{
     transform: translateX(0);
 }
 
+}
+
+@keyframes rowBoat {
+    from{
+        transform: translateX(0rem);
+    }
+    to{
+        transform: translateX(135rem);
+    }
 }
 
 

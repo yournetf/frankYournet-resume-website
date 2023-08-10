@@ -7,11 +7,16 @@
     <link rel="stylesheet" href="indexStyle.css">
 </head>
 <body>
-    <audio src="/spaceSong.mp3" autoplay loop></audio>
-    <div><button class="button" id="moonButton"></button></div>
-    <div><button class="button" id="moon2Button"></button></div>
-    <div><button class="button" id="projectButton" style="display:none;">Projects</button></div>
-    <div><button class="button" id="contactButton" style="display:none;">Contact Information</button></div>
+    <audio id="backgroundMusic" src="/spaceSong.mp3" autoplay loop></audio>
+    <audio id="hoverSound" src="low-engine-hum-72529.mp3"></audio>
+
+    <div>    
+    <button class="button" id="moonButton" style="display: none;"><span id="moonButtonText"></span></button>
+    <button class="button" id="moon2Button" style="display: none;"><span id="moon2ButtonText"></span></button>
+    <button class="button" id="projectButton" style="display:none;"></button>
+    <img src="womanInBoat.png" alt="womanInBoat" id="womanInBoat">
+    <button class="button" id="contactButton" style="display:none;"></button>
+    </div>
 
 
     <div id="stars"></div>
