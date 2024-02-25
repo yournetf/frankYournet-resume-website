@@ -1,0 +1,710 @@
+*{
+    box-sizing: border-box;
+}
+
+
+body{
+    height: 500vh;
+    margin: 0;
+    overflow-x: hidden;
+    font-family: fantasy;
+    background: white;
+}
+
+
+
+
+
+
+.topNavGlow{
+    z-index: 1;
+    background: repeating-conic-gradient(from var(--a),rgb(255, 255, 255) 0%, white 5%, transparent 5%, transparent 40%,white 50%);
+    margin-left: 11.75vw;
+    position: fixed;
+    top: 1.85vh;
+    width: max(75.5vw, 305px);
+    height: max(3.5vh, 29px);    
+    border-radius: 1rem;
+    animation: borderSpin 5s linear infinite;
+}
+
+@property --a{
+    syntax: '<angle>';
+    inherits: false;
+    initial-value: 0deg;
+}
+
+@keyframes borderSpin {
+    0%{
+        --a: 0deg;
+    }
+    100%{
+        --a: 360deg;
+    }
+}
+
+.topNavGlow::before{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: repeating-conic-gradient(from var(--a),rgb(255, 157, 0) 0%, rgb(255, 157, 0) 5%, transparent 5%, transparent 40%, rgb(255, 157, 0) 50%);
+    animation: borderSpin 5s linear infinite;
+    animation-delay: -2s;
+    border-radius: 20px;
+
+}
+
+.topNav{
+
+    margin-left: 12vw;
+    position: fixed;
+    top: 2vh;
+    left: 0%;
+    width: max(75vw, 300px);
+    height: max(3.2vh, 27.5px);
+    float: left;
+    background-color: rgb(255, 255, 255);
+    border: grey solid 2px;
+    border-radius: 1rem;
+    
+}
+
+.navButtons{
+    width: max(10vw, 30px);
+    height: max(3vh, 25px);
+    margin-left: 1vw;
+    font-weight: bolder;
+    font-size: clamp(8px, 1vw, 20px);
+    background: transparent;
+    cursor: pointer;
+    float: left;
+    border: hidden;
+
+    background: -webkit-linear-gradient(#eee, rgb(0, 0, 0));
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+    
+}
+
+.navButtons:hover{
+    transition: ease-in-out 1s;
+    text-shadow: 0 0 0.5px beige, 0 0 3px rgb(255, 157, 0);
+}
+
+
+
+
+
+
+#contactButton{
+    margin-left: 20vw;
+    width: max(10vw, 30px);
+    height: max(3vh, 25px);
+    font-weight: bolder;
+    font-size: clamp(8px, 1vw, 20px);
+    background: transparent;
+    border: transparent;
+    cursor: pointer;
+    float: left;
+    border: hidden;
+
+    background: -webkit-linear-gradient(#eee, rgb(0, 0, 0));
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+
+#contactButton:hover{
+    transition: ease-in 1s;
+    text-shadow: 0 0 0.5px beige, 0 0 3px rgb(255, 157, 0);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+#welcomeCardBackground{
+    
+    color: black;
+    
+    text-align: center;
+    
+
+    
+    width: 100vw;    
+
+
+
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 20%,
+              rgba(255,255,255,1)), url("Images/3d-background-with-white-cubes.jpg");
+    background-size:cover;
+
+    
+
+    display: grid;
+    grid-template-columns: 75% 25%;
+
+    
+
+
+    animation: fade 4s linear forwards;
+
+
+}
+
+h1{
+    padding-top: 200px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    
+    font-weight: 700;
+    font-size: 2rem;
+    margin-top: 20%;
+    line-height: 0.1rem;
+}
+
+h2{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 3rem;
+    line-height: 0.1rem;
+    color: orange;
+}
+
+
+
+
+#welcomeCard{
+    height: 100%;
+    background-color: transparent;
+    border-radius: 0.25em;
+}
+
+
+
+#welcomeButtonsDiv{
+    background-color: transparent;
+}
+
+.welcomeButtons{
+    height: max(2vh, 50px);
+    width: max(2vw, 50px);
+    font-size: max(1vw, 20px);
+    border-radius: 10rem;
+    background: transparent;
+    border: transparent;
+}
+
+#linkedInButton{
+    color: blue;
+}
+
+#mailButton{
+    color: blue;
+}
+
+
+
+@keyframes fade {
+    0%{
+        opacity: 0%;
+    }
+    100%{
+        opacity: 100%;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+#skillsDiv{
+    width: 95vw;
+    padding-top: 50vh;
+    padding-left: 10vw;
+    background-color: transparent;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    
+}
+
+#skills{
+    font-weight: 100;
+    font-size: 2rem;
+    background-color: transparent;
+    margin: 0px;
+    padding-top: 50px;
+}
+
+#technologies{
+    background-color: transparent;
+    font-weight: 700;
+    font-size: 4rem;
+    margin: 0px;
+    padding: 0px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#languagesSection{
+    margin: 50px auto;
+    width: min(66vw, 1100px);
+    height: 50vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: min(5vw, 100px);
+    background-color: rgb(255, 255, 255);
+    
+}
+
+.languages{
+    z-index: 0;
+    width: 100px;
+    height: 100px;
+    background: radial-gradient(rgb(255, 255, 255), rgb(227, 227, 227));
+    border-radius: 10rem;
+    box-shadow: inset -3px -5px 5px rgb(247, 189, 81),
+                       inset 5px 5px 5px rgb(249, 249, 249);
+    animation: bounce 2s linear infinite;
+}
+
+
+
+.ballShadows{
+    position: relative;
+    margin: 0 auto;
+    background-color: rgba(8, 8, 8, 0.153);
+    width: 50px;
+    height: 8px;
+    margin-top: 25%;
+    border-radius: 50%;
+    animation: shadow 2s linear infinite;
+    animation-delay: -1s;
+}
+
+@keyframes shadow {
+    50%{
+        transform: scaleX(0.5);
+    }
+}
+
+@keyframes bounce{
+    50%{
+        margin-top: -10px;
+    }
+
+    100%{
+        margin-top: 0px;
+    }
+}
+
+
+.languages i{
+    margin-top: 15%;
+    margin-left: 22%;
+    font-size: 65px;
+    color: blueviolet;
+}
+
+#jsIcon{
+    color: yellow;
+}
+
+#htmlIcon{
+    margin-left: 25%;
+    margin-top: 20%;
+    color: orangered;
+}
+
+#cssIcon{
+    color:rgb(0, 0, 255);
+    margin-top: 20%;
+    margin-left: 25%;
+}
+
+#sqlIcon{
+    color: rgb(45, 151, 141);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#bottomText{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 50px;
+    font-weight:bolder;
+    letter-spacing: 0.5px;
+    word-spacing: 0.2px;
+}
+
+
+
+#experienceSection{
+    margin-top: 150px;
+    padding-top: 150px;
+    background-color: aqua;
+    background: transparent;
+    margin-left: 10%;
+    width: 80%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1;
+    gap: 10px;
+ 
+   
+}
+
+.experienceCard{
+    height: 60%;
+    margin-top: 20%;
+    margin-left: 2.5%;
+    margin-right: 2.5%;
+    background-color: rgb(227, 227, 227);
+    color: rgb(0, 0, 0);
+
+    box-shadow: -5px 5px 2px orange,
+                5px -5px 2px orange,
+                -5px -5px 2px orange,
+                5px 5px 2px orange;
+
+
+    transform: perspective(2000px) rotate3d(0,1,0,0deg);
+
+    
+}
+
+.cardTitle{
+    font-weight: 900;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(255, 255, 255);
+    height: 30%;
+    text-align: center;
+    justify-content: center;  
+    border-bottom: 1px solid black;
+}
+
+.cardImg{
+    height: 100%;
+    border-radius: 10rem;
+}
+
+.cardText{
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    height: 100%;
+    word-break:keep-all;
+    padding: 30px;
+    padding-top: 50px;
+    line-height: 25px;
+    font-weight: 100;
+}
+
+
+
+
+
+
+
+
+.videoSection{
+    scroll-margin: 150px;
+    margin-top: 150px;
+    margin-left: 10vw;
+    background-color: rgb(255, 255, 255);
+    width: 80%;
+    height: fit-content;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 5px;
+    
+    box-shadow: -5px 5px 2px orange,
+                5px -5px 2px orange,
+                -5px -5px 2px orange,
+                5px 5px 2px orange;
+}
+
+video{
+    margin-top: 10%;
+    width: 40vw;
+    box-shadow:  -5px 5px 2px orange,
+    5px -5px 2px orange,
+    -5px -5px 2px orange,
+    5px 5px 2px orange;
+}
+
+#video1{
+    grid-column: 1;
+    grid-row: 1;
+}
+
+#video2{
+    grid-column: 1;
+    grid-row: 2;
+}
+
+#video3{
+    grid-column: 1;
+    grid-row: 3;
+}
+
+.videoText{
+    grid-column: 2;
+    margin-top: 10%;
+    height: 80%;
+    background-color: rgb(227, 227, 227);
+    border-radius: 2rem 0rem 0rem 2rem;
+    border-left: 1px solid black;
+    border-bottom: 1px solid black;
+    border-top: 1px solid black;
+}
+
+.videoText p{
+    text-align: center;
+    margin-top: 10%;
+    padding: 5px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 100;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#plusButtonDiv{
+    visibility: hidden;
+    position: fixed;
+    bottom: 2vh;
+    right: min(3vw, 60px);
+    height: min(800px, 60%);
+    width: 3rem;
+    background: rgba(128, 128, 128, 0);
+    border-radius: 2rem;
+}
+
+#plusButton{
+    position: fixed;
+    margin-left: 0.05rem;
+    top: 90.1vh;
+    cursor: pointer;
+    height: max(3vw, 2.5rem);
+    width: max(3vw, 2.5rem);
+    font-size: max(2vw, 1.75rem);
+    color: black;
+    background: linear-gradient(white,rgb(0, 144, 240));
+    border-radius: 2rem;
+    border: transparent;
+}
+
+#plusButton:hover{
+    transition: ease-in-out 0.5s;
+    box-shadow: 50px 50px 50px  rgb(0, 191, 255), 
+                -50px -50px 50px rgb(0, 191, 255), 
+                -50px 50px 50px  rgb(225, 0, 255),
+                50px -50px 50px  rgb(225, 0, 255);
+    
+}
+
+#plusButton:not(:hover){
+    transition: ease-in-out 0.5s;
+    box-shadow: none;
+}
+
+#plusButtonGlow{
+    margin-left: 0.2rem;
+    position: fixed;
+    top: 90vh;
+    height: max(3.1vw, 2.6rem);
+    width: max(3.1vw, 2.6rem);
+    border-radius: 2rem;
+    
+
+    background: repeating-conic-gradient(from var(--a),rgb(0, 191, 255) 0%, rgb(0, 191, 255) 5%, transparent 5%, transparent 40%,rgb(0, 191, 255) 50%);
+    animation: borderSpin 10s linear infinite;
+
+}
+
+#plusButtonGlow::before{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: repeating-conic-gradient(from var(--a),rgb(225, 0, 255) 0%, rgb(225, 0, 225) 5%, transparent 5%, transparent 40%, rgb(255, 0, 179) 50%);
+    animation: borderSpin 10s linear infinite;
+    animation-delay: -2s;
+    border-radius: 20px;
+}
+
+#lightSwitch{
+    margin-left: 0.2rem;
+    opacity: 0%;
+    z-index: -1;
+    position: fixed;
+    top: 90vh;
+    cursor: pointer;
+    height: max(3vw, 2.5rem);
+    width: max(3vw, 2.5rem);
+    font-size: max(2vw, 1.75rem);
+    color: black;
+    background: linear-gradient(white,rgb(0, 144, 240));
+    border-radius: 2rem;
+    border: transparent;
+    
+}
+
+
+
+
+
+
+
+
+
+@media (max-width: 700px) {
+
+    #profilePicBackground{
+        height: 350px;
+    }
+
+    #profilePic{
+        margin-top: 25px;
+    }
+
+  
+    #welcomeCardBackground{
+        height: fit-content;
+        grid-template-columns: 100%;
+        grid-template-rows: 30% 70%;
+        justify-content: space-evenly;
+    }
+
+    #skills{
+        font-size: 1rem;
+    }
+
+    #technologies{
+        font-size: 2rem;
+    }
+
+    
+    #experienceSection{
+        margin-top: 500px;
+        height: 500px;
+        grid-template-columns: 100%;
+        grid-template-rows: repeat(3, 400px);
+    }
+
+    .experienceCard{
+        display: flex;
+     }
+
+    .cardTitle{
+        width: 30%;
+        height: 100%;
+        border-bottom: none;
+        border-right: 1px solid black;
+    }
+
+    .cardImg{
+        width: 70px;
+        height: 70px;
+        margin-top: 50%;
+    }
+    
+    .cardText{
+        margin-top: -5px;
+        width: 70%;
+    }
+  
+
+
+
+    .videoSection{
+        display: inline-block;
+        margin-top: 820px;
+    }
+
+    video{
+        width: 250px;
+        margin-left: 15%;
+    }
+
+    .videoText{
+        margin-left: 10%;
+        height: 50px;
+        margin-top: -15px;  
+        width: 90%;
+    }
+        
+
+   
+
+
+
+
+
+
+
+
+
+   
+}
+
