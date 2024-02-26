@@ -1,5 +1,5 @@
 const aboutButton = document.querySelector('#aboutButton');
-const resumeButton = document.querySelector('#resumeButton');
+const skillsButton = document.querySelector('#skillsButton');
 const projectsButton = document.querySelector('#projectsButton');
 const gitButton = document.querySelector('#githubButton');
 const contactButton = document.querySelector('#contactButton');
@@ -44,6 +44,13 @@ projectsButton.addEventListener('click', () =>{
     var videoSection = document.getElementById("videoSection");
     videoSection.scrollIntoView({ behavior:"smooth", block:"start", inline:"nearest"}); 
 });
+
+
+skillsButton.addEventListener('click', () =>{
+    var skillSection = document.getElementById("languagesSection");
+    skillSection.scrollIntoView({ behavior:"smooth", block:"start", inline:"nearest"}); 
+});
+
 
 
 

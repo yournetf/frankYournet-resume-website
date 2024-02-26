@@ -4,7 +4,7 @@
 
 
 body{
-    height: 500vh;
+    height: 450vh;
     margin: 0;
     overflow-x: hidden;
     font-family: fantasy;
@@ -280,13 +280,14 @@ h2{
 
 
 #languagesSection{
+    scroll-margin: 250px;
     margin: 50px auto;
     width: min(66vw, 1100px);
     height: 50vh;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: min(5vw, 100px);
+    gap: min(6vw, 100px);
     background-color: rgb(255, 255, 255);
     
 }
@@ -341,7 +342,7 @@ h2{
 }
 
 #jsIcon{
-    color: yellow;
+    color: rgb(224, 224, 4);
 }
 
 #htmlIcon{
@@ -358,6 +359,21 @@ h2{
 
 #sqlIcon{
     color: rgb(45, 151, 141);
+}
+
+#iosIcon{
+    color: rgb(0, 166, 255);
+}
+
+#editingIcon{
+    color:rgb(223, 5, 212);
+    font-size: 55px;
+    margin-top: 20%;
+    margin-left: 17%;
+}
+
+#cIcon{
+    color: navy;
 }
 
 
@@ -385,9 +401,35 @@ h2{
 }
 
 
+#aboutMeDiv{
+    width: 95vw;
+    padding-top: 50vh;
+    padding-left: 10vw;
+    background-color: transparent;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+#aboutMe{
+    font-weight: 100;
+    font-size: 2rem;
+    background-color: transparent;
+    margin: 0px;
+    padding-top: 50px;
+}
+
+#experience{
+    background-color: transparent;
+    font-weight: 700;
+    font-size: 4rem;
+    margin: 0px;
+    padding: 0px;
+}
+
+
 
 #experienceSection{
-    margin-top: 150px;
+    scroll-margin: 100px;
+    margin-top: -100px;
     padding-top: 150px;
     background-color: aqua;
     background: transparent;
@@ -397,13 +439,10 @@ h2{
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1;
     gap: 10px;
- 
-   
 }
 
 .experienceCard{
     height: 60%;
-    margin-top: 20%;
     margin-left: 2.5%;
     margin-right: 2.5%;
     background-color: rgb(227, 227, 227);
@@ -453,9 +492,39 @@ h2{
 
 
 
+#projectsDiv{
+    width: 95vw;
+    padding-top: 50vh;
+    padding-left: 10vw;
+    background-color: transparent;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+
+#work{
+    font-weight: 100;
+    font-size: 2rem;
+    background-color: transparent;
+    margin: 0px;
+    padding-top: 50px;
+}
+
+#projects{
+    background-color: transparent;
+    font-weight: 700;
+    font-size: 4rem;
+    margin: 0px;
+    padding: 0px;
+}
+
+
+
+
+
+
 .videoSection{
-    scroll-margin: 150px;
-    margin-top: 150px;
+    scroll-margin: 200px;
+    margin-top: 30px;
     margin-left: 10vw;
     background-color: rgb(255, 255, 255);
     width: 80%;
@@ -474,6 +543,7 @@ h2{
 video{
     margin-top: 10%;
     width: 40vw;
+    border-radius: 0rem 1rem 1rem 0rem;
     box-shadow:  -5px 5px 2px orange,
     5px -5px 2px orange,
     -5px -5px 2px orange,
@@ -508,9 +578,12 @@ video{
 
 .videoText p{
     text-align: center;
-    margin-top: 10%;
-    padding: 5px;
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    height: 100%;
+    word-break:keep-all;
+    padding: 30px;
+    line-height: 25px;
     font-weight: 100;
 }
 
@@ -644,9 +717,20 @@ video{
         font-size: 2rem;
     }
 
+
+
+
+    #aboutMe{
+        font-size: 1rem;
+    }
+
+    #experience{
+        font-size: 2rem;
+    }
+
     
     #experienceSection{
-        margin-top: 500px;
+        scroll-margin: 100px;
         height: 500px;
         grid-template-columns: 100%;
         grid-template-rows: repeat(3, 400px);
@@ -670,29 +754,45 @@ video{
     }
     
     .cardText{
-        margin-top: -5px;
+       margin-top: -40px;
         width: 70%;
+        height: fit-content;
     }
   
 
 
+    #projectsDiv{
+        margin-top: 600px;
+    }
+
+    #work{
+        font-size: 1rem;
+    }
+
+    #projects{
+        font-size: 2rem;
+    }
+
 
     .videoSection{
         display: inline-block;
-        margin-top: 820px;
     }
 
+   
+
     video{
-        width: 250px;
-        margin-left: 15%;
+        width: 80%;
     }
 
     .videoText{
         margin-left: 10%;
-        height: 50px;
+        height: fit-content;
         margin-top: -15px;  
+        margin-bottom: 70px;
         width: 90%;
     }
+
+   
         
 
    
