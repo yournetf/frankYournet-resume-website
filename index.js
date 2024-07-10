@@ -7,6 +7,14 @@ const plusButton = document.querySelector('#plusButton')
 const lightSwitch = document.querySelector('#lightSwitch');
 const buttonSection = document.querySelector('#plusButtonDiv');
 const javaIcon = document.querySelector('#javaIcon');
+const jsIcon = document.querySelector('#jsIcon');
+const htmlIcon = document.querySelector('#htmlIcon');
+const cssIcon = document.querySelector('#cssIcon');
+const sqlIcon = document.querySelector('#sqlIcon');
+const iosIcon = document.querySelector('#iosIcon');
+const editingIcon = document.querySelector('#editingIcon');
+const cIcon = document.querySelector('#cIcon');
+const podcastIcon = document.querySelector('#podcastIcon');
 
 
 var plusClicked = false;
@@ -33,14 +41,12 @@ buttonSection.addEventListener('mouseout', () =>{
 
 
 aboutButton.addEventListener('click', () =>{
-
     var welcomeCard = document.getElementById("experienceSection");
     welcomeCard.scrollIntoView({ behavior:"smooth", block:"start", inline:"nearest"}); 
 });
 
 
 projectsButton.addEventListener('click', () =>{
-
     var videoSection = document.getElementById("videoSection");
     videoSection.scrollIntoView({ behavior:"smooth", block:"start", inline:"nearest"}); 
 });
@@ -56,47 +62,25 @@ skillsButton.addEventListener('click', () =>{
 
 
 
-var degree = 0;
-var speed = 0;
+let degree = 0;
+let speed = 0;
 
-javaIcon.addEventListener('mouseover', ()=> {
+javaIcon.addEventListener('mouseover', addSpinToButtonJava, {once : true});
+jsIcon.addEventListener('mouseover', addSpinToButtonjs, {once : true});
+htmlIcon.addEventListener('mouseover', addSpinToButtonhtml, {once : true});
+cssIcon.addEventListener('mouseover', addSpinToButtoncss, {once : true});
+sqlIcon.addEventListener('mouseover', addSpinToButtonsql, {once : true});
+iosIcon.addEventListener('mouseover', addSpinToButtonios, {once : true});
+editingIcon.addEventListener('mouseover', addSpinToButtonediting, {once : true});
+cIcon.addEventListener('mouseover', addSpinToButtonc, {once : true});
+podcastIcon.addEventListener('mouseover', addSpinToButtonPodcast, {once : true});
 
-
-    var d = document.getElementById("javaSpinner");
-    let spinTimer = setInterval(spin, 20);
-
-    function spin(){
-
-        if(degree >= 10800){
-            clearInterval(spinTimer);
-        }
-
-        else{
-            d.style.transform = 'perspective(2000px) rotate3d(0,1,0,' + speed +'deg)';
-            degree+=1;
-            speed+=1;
-        }
-    }
-
-
-    
-
-});
 
 
 
 lightSwitch.addEventListener('click', () =>{
     document.body.style.backgroundColor = 'rgb(36, 35, 35)';
 });
-
-
-
-
-
-
-
-
-
 
 
 
@@ -169,5 +153,193 @@ function darkModeActivate(){
 // });
 
 
+function addSpinToButtonJava(){
+    let degreeTemp = degree;
+    let speedTemp = speed;
+    let d = document.getElementById("javaSpinner");
+    let spinTimer = setInterval(spin, 22);
+
+    function spin(){
+
+        if(degreeTemp >= 720){
+            clearInterval(spinTimer);
+            degreeTemp = 0;
+        }
+
+        else{
+            d.style.transform = 'perspective(2000px) rotate3d(0,1,0,' + speedTemp +'deg)';
+            degreeTemp+=1;
+            speedTemp+=1;
+        }
+    } 
+}
+function addSpinToButtonjs(){
+    let degreeTemp = degree;
+    let speedTemp = speed;
+    let d = document.getElementById("jsSpinner");
+    let spinTimer = setInterval(spin, 20);
 
 
+    function spin(){
+
+        if(degreeTemp >= 720){
+            clearInterval(spinTimer);
+            degreeTemp = 0;
+        }
+
+        else{
+            d.style.transform = 'perspective(2000px) rotate3d(0,1,0,' + speedTemp +'deg)';
+            degreeTemp+=1;
+            speedTemp+=1;
+        }
+    } 
+}
+
+function addSpinToButtonhtml(){
+    let degreeTemp = degree;
+    let speedTemp = speed;
+    let d = document.getElementById("htmlSpinner");
+    let spinTimer = setInterval(spin, 22);
+
+    function spin(){
+
+        if(degreeTemp >= 720){
+            clearInterval(spinTimer);
+            degreeTemp = 0;
+        }
+
+        else{
+            d.style.transform = 'perspective(2000px) rotate3d(0,1,0,' + speedTemp +'deg)';
+            degreeTemp+=1;
+            speedTemp+=1;
+        }
+    } 
+}
+
+function addSpinToButtoncss(){
+    let degreeTemp = degree;
+    let speedTemp = speed;
+    let d = document.getElementById("cssSpinner");
+    let spinTimer = setInterval(spin, 22);
+
+    function spin(){
+
+        if(degreeTemp >= 720){
+            clearInterval(spinTimer);
+            degreeTemp = 0;
+        }
+
+        else{
+            d.style.transform = 'perspective(2000px) rotate3d(0,1,0,' + speedTemp +'deg)';
+            degreeTemp+=1;
+            speedTemp+=1;
+        }
+    } 
+}
+
+function addSpinToButtonsql(){
+    let degreeTemp = degree;
+    let speedTemp = speed;
+    let d = document.getElementById("sqlSpinner");
+    let spinTimer = setInterval(spin, 22);
+
+    function spin(){
+
+        if(degreeTemp >= 720){
+            clearInterval(spinTimer);
+            degreeTemp = 0;
+        }
+
+        else{
+            d.style.transform = 'perspective(2000px) rotate3d(0,1,0,' + speedTemp +'deg)';
+            degreeTemp+=1;
+            speedTemp+=1;
+        }
+    } 
+}
+
+function addSpinToButtonios(){
+    let degreeTemp = degree;
+    let speedTemp = speed;
+    let d = document.getElementById("iosSpinner");
+    let spinTimer = setInterval(spin, 22);
+
+    function spin(){
+
+        if(degreeTemp >= 720){
+            clearInterval(spinTimer);
+            degreeTemp = 0;
+        }
+
+        else{
+            d.style.transform = 'perspective(2000px) rotate3d(0,1,0,' + speedTemp +'deg)';
+            degreeTemp+=1;
+            speedTemp+=1;
+        }
+    } 
+}
+
+
+
+function addSpinToButtonc(){
+    let degreeTemp = degree;
+    let speedTemp = speed;
+    let d = document.getElementById("cSpinner");
+    let spinTimer = setInterval(spin, 22);
+
+    function spin(){
+
+        if(degreeTemp >= 720){
+            clearInterval(spinTimer);
+            degreeTemp = 0;
+        }
+
+        else{
+            d.style.transform = 'perspective(2000px) rotate3d(0,1,0,' + speedTemp +'deg)';
+            degreeTemp+=1;
+            speedTemp+=1;
+        }
+    } 
+}
+
+function addSpinToButtonediting(){
+    let degreeTemp = degree;
+    let speedTemp = speed;
+    let d = document.getElementById("editingSpinner");
+    let spinTimer = setInterval(spin, 22);
+
+    function spin(){
+
+        if(degreeTemp >= 720){
+            clearInterval(spinTimer);
+            degreeTemp = 0;
+        }
+
+        else{
+            d.style.transform = 'perspective(2000px) rotate3d(0,1,0,' + speedTemp +'deg)';
+            degreeTemp+=1;
+            speedTemp+=1;
+        }
+    } 
+}
+
+function addSpinToButtonPodcast(){
+    let degreeTemp = degree;
+    let speedTemp = speed;
+    let d = document.getElementById("podcastingSpinner");
+    let spinTimer = setInterval(spin, 22);
+
+    function spin(){
+
+        if(degreeTemp >= 720){
+            clearInterval(spinTimer);
+            degreeTemp = 0;
+        }
+
+        else{
+            d.style.transform = 'perspective(2000px) rotate3d(0,1,0,' + speedTemp +'deg)';
+            degreeTemp+=1;
+            speedTemp+=1;
+        }
+    } 
+}
