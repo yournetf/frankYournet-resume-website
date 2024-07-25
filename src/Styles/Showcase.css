@@ -1,0 +1,49 @@
+.showcaseDiv{
+    position: relative;
+    color: white;
+    margin-top: 100px;
+    width: 100%;
+    height: 400px;
+    background-color: rgb(255, 255, 255);
+    background-image: url("src/assets/cartoonCurtains.png");
+    background-size:contain;
+}
+
+.videoDiv{
+    position: absolute;
+    left: 10%;
+    top: 10%;
+    width: 80%;
+    height: 80%;
+    background-color: black;
+    box-shadow: 1px 1px 10px 10px rgba(24, 24, 24, 0.969);
+}
+
+.showcaseVideo{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.arrowButton{
+    position: absolute;
+    background-color: transparent;
+    border: none;
+    top: 50%;
+    cursor: pointer;
+    color: white;
+}
+
+#leftArrow{
+    left: 5%;
+}
+
+#rightArrow{
+    left: 93%;
+}
+
+@media screen and (max-width: 900px) {
+    .showcaseDiv{
+        background-size: cover;
+    }
+}

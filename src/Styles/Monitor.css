@@ -1,0 +1,38 @@
+.monitorDiv{
+    position: absolute;
+}
+
+.monitorFrame{
+    position: relative;
+    margin-top: -250px;
+    width: 140px;
+    height: 80px;
+    background-color: rgb(69, 69, 69);
+}
+
+.monitorScreen{
+    position: absolute;
+    width: 90%;
+    height: 90%;
+    margin-left: 5%;
+    margin-top: 2.5%;
+    background-color: rgb(1, 1, 1);
+    overflow: hidden;
+}
+
+.monitorFrameSide{
+    position: absolute;
+    width: 10px;
+    height: 80px;
+    background-color: rgb(158, 158, 158);
+    margin-left: -5%;
+    margin-top: -80px;
+}
+
+#monitorFrameSideRight{
+    margin-left: 105%;
+}
+embed{
+    max-width: 140px;
+    cursor: pointer;
+}

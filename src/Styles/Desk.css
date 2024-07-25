@@ -1,0 +1,103 @@
+.desk-block{
+    position: absolute;
+    top: 0px;
+}
+
+.desk{
+    max-width: 500px;
+    height: 200px;
+    position: relative;
+    top: 0px;
+    left: -20px;
+    width: 1000px;
+    background-color: rgba(0, 255, 255, 0);
+}
+
+.desk-leg{
+    position: absolute;
+}
+
+#desk-leg-right{
+    left: 368px;
+}
+
+.desk-leg-base{
+    position: absolute;
+    background-color: white;
+    top: 130px;
+    left: 17px;
+    box-shadow: -1px -5px 3px 1px grey;
+    width: 20px;
+    height: 100px;
+    border-radius: 5px;
+    transform: rotate3d(1,0,0, 105deg);
+}
+
+
+.desk-big-extender{
+    position: absolute;
+    background-color: white;
+    top: 100px;
+    left: 20px;
+    height: 75px;
+    width: 15px;
+    border: 1px solid rgba(128, 128, 128, 0.261);
+}
+
+.desk-counter{
+    position: absolute;
+    height: 150px;
+    width: 425px;
+    background-color: white;
+    border-radius: 30px;
+    transform: rotate3d(1,0,0, 110deg);
+    z-index: 4;
+    border: 2px solid grey;
+    box-shadow: 0px 0px 4px 1px grey;
+}
+
+.desk-front{
+    position: absolute;
+    background-color: rgb(241, 241, 241);
+    border-radius: 30px;
+    height: 150px;
+    width: 425px;
+    top: 10px;
+    border: 1px solid rgb(159, 159, 159);
+    transform: rotate3d(1,0,0, 110deg);
+    z-index: 3;
+}
+
+.desk-buttons-container{
+    display: flex;
+    margin-top: 2px;
+    margin-left: calc(100% - 120px);
+    height: 22px;
+    width: 80px;
+    background-color: black;
+    border-radius: 5px;
+    z-index: 5;
+}
+
+.desk-buttons-container button{
+    height: 30px;
+    width: 15px;
+    font-size: 1.5rem;
+    border: none;
+    margin-left: 2px;
+    background-color: transparent;
+    color: cornflowerblue;
+    cursor: pointer;
+    z-index: 5;
+}
+
+#desk-height{
+    margin-top: -2px;
+    margin-left: 8px;
+    font-weight: 500;
+    rotate: 180deg;
+    transform:rotate3d(0,1,0, 180deg);
+    font-size: 1.2rem;
+    height: 25px;
+    color: cornflowerblue;
+}

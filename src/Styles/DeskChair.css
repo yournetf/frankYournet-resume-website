@@ -1,0 +1,177 @@
+.chair{
+    background-color:transparent;
+    position: absolute;
+    top: 0px;
+    left: 120px;
+    max-width: 150px;
+    z-index: 5;
+}
+
+.chair-animated{
+    background-color:transparent;
+    position: relative;
+    left: 790px;
+    width: 200px;
+    height: 300px;
+    animation: chairRolling 10s linear;
+}
+
+@keyframes chairRolling {
+    0%{
+        left: 790px;
+    }
+    25%{
+        left: 20px;
+    }
+    75%{
+        left: 90%;
+    }
+    100%{
+        left: 790px;
+    }
+}
+
+.chair-head{
+    position: absolute;
+    left: 30px;
+    top: 10px;
+    border-radius: 10rem;
+    background-color: black;
+    width: 80px;
+    height: 30px;
+    clip-path: polygon(20% 0%, 80% 0%, 100% 100%, 0% 100%);
+}
+
+.chair-wing-left{
+    z-index: 4;
+    position: absolute;
+    left: 10px;
+    top: 30px;
+    width: 50px;
+    height: 50px;
+    clip-path: ellipse(50% 40% at 50% 50%);
+    background-color: black;
+    transform: rotate3d(0 , 1 , 0, 15deg);
+}
+
+.chair-wing-right{
+    z-index: 4;
+    position: absolute;
+    left: 80px;
+    top: 30px;
+    width: 50px;
+    height: 50px;
+    clip-path: ellipse(50% 40% at 50% 50%);
+    background-color: black;
+    transform: rotate3d(0 , 1 , 0, 15deg);
+}
+
+.chair-body{
+    z-index: 4;
+    position: absolute;
+    background-color: black;
+    border-radius: 37%;
+    top: 30px;
+    height: 140px;
+    width: 140px;
+    clip-path: polygon(20% 0%, 80% 0%, 85% 100%, 15% 100%);
+}
+
+.chair-arm{
+    position: absolute;
+    z-index: 4;
+    background-color: rgb(0, 0, 0);
+    width: 125px;
+    height: 100px;
+    top: 60px;
+    left: 45px;
+    clip-path: polygon(65% 85%, 67% 77%, 67% 58%, 76% 58%, 76% 75%, 76% 84%, 72% 93%, 66% 98%, 55% 100%, 38% 100%, 51% 95%, 60% 92%);
+}
+
+#chair-arm-left{
+    transform: rotate3d(0,1,0, 180deg);
+    background-color: rgb(0, 0, 0);
+    left: -30px;
+
+}
+
+.chair-cylinder{
+    position: absolute;
+    z-index: 1;
+    background: transparent;
+    width: 30px;
+    height: 100px;
+    top: 160px;
+    left: 55px;
+}
+
+.little-cylinder{
+    background-color: rgb(23, 23, 23);
+    width: 70%;
+    margin-left: 15%;
+    height: 20px;
+}
+
+.medium-cylinder{
+    background-color: rgb(23, 23, 23);
+    width: 80%;
+    margin-left: 10%;
+    height: 25px;
+    border-radius: 5px 5px 0px 0px;
+}
+
+.big-cylinder{
+    background-color: rgb(23, 23, 23);
+    width: 90%;
+    margin-left: 5%;
+    height: 25px;
+    border-radius: 5px 5px 0px 0px;
+}
+
+.chair-legs{
+    cursor: pointer;
+}
+
+.chair-leg-long{
+    position: absolute;
+    background-color: black;
+    width: 80px;
+    height: 10px;
+    top: 220px;
+    border-radius: 5px 0px 0px 0px;
+}
+
+#chair-leg-long-right{
+    border-radius: 0px 5px 0px 0px;
+    left: 60px;
+}
+
+.chair-leg-long-wheel{
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    background-color: aliceblue;
+    border-radius: 10rem;
+    top: 10px;
+}
+
+#chair-leg-long-wheel-right{
+    left: 65px;
+    top: 10px;
+}
+
+.arm-rest{
+    position: absolute;
+    z-index: 6;
+    transform: rotate3d(1,0,0, 100deg);
+    width: 40px;
+    height:40px;
+    top: 100px;
+    left: -14px;
+    background-color: rgb(121, 111, 120);
+    clip-path: ellipse(18% 45% at 50% 50%);
+}
+
+#arm-rest-right{
+    left: 114px;
+}

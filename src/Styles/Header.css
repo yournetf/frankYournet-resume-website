@@ -1,0 +1,78 @@
+header{
+    position: sticky;
+    top: 0;
+    left: 0;
+}
+
+.header-background{
+    z-index: 3;
+    position: fixed;
+    top: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    background-color: rgb(48, 48, 48);
+    width: 100%;
+    height: 8vw;
+    min-height: 50px;
+    max-height: 100px;
+}
+
+.header-background button{
+    transition: 0.3s;
+    position: relative;
+    cursor: pointer;
+    border-radius: 5px 5px 5px 5px;
+    opacity: 80%;
+    border: 2px solid black;
+}
+
+.header-background button:hover{
+    transition: 0.3s;
+    opacity: 100%;
+}
+
+.header-background img{
+    position: absolute;
+}
+
+.header-background a button{
+    height: 100%;
+    width: 100%;
+    text-decoration: none;
+    color: black;
+}
+
+#home-button{
+    background: url("../assets/cartoon-park2.jpeg") no-repeat top;
+    background-size: cover;
+}
+
+#phatblack-button{
+    background: url("../assets/cartoon-studio.jpeg") no-repeat top;
+    background-size: cover;
+    background-position:center;
+}
+
+#university-button{
+    background: url("../assets/cartoon-uni.jpeg");
+    background-size: cover;
+    background-position: top;
+}
+
+#phatblack-link{
+    transition: 0.3s;
+    opacity: 90%;
+}
+
+#phatblack-link:hover{
+    transition: 0.3s;
+    opacity: 100%;
+}
+
+#personal-button{
+    background: url("../assets/cartoon-basketball.webp");
+    background-size: cover;
+    background-position: top;
+}

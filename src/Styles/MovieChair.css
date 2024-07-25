@@ -1,0 +1,53 @@
+.MovieChair{
+    position: relative;
+    max-height: 80%;
+    width: 20%;
+    min-width: 110px;
+    max-width: 210px;
+}
+
+
+.MovieChairBack{
+    position: absolute;
+    background-color: green;
+    min-width: 180px;
+    min-height: 80px;
+    z-index: 2;
+    background-color: rgb(184, 4, 4);
+    clip-path: ellipse(30% 80% at 51% 87%);
+    box-shadow: inset 10px 10px 10px 10px rgba(255, 255, 255, 0.246);
+}
+
+.MovieChairArms{
+    position: absolute;
+    background-color: rgb(184, 4, 4);
+    min-width: 40px;
+    min-height: 60px;
+    z-index: 1;
+    top: 25px;
+    clip-path: ellipse(21% 40% at 51% 51%);
+}
+
+#MovieChairArmRight{
+    left: 120px;
+    box-shadow: inset 1px 10px 10px 10px rgba(255, 255, 255, 0.246);
+}
+
+#MovieChairArmLeft{
+    left: 20px;
+    box-shadow: inset 1px 10px 10px 10px rgba(255, 255, 255, 0.246);
+}
+
+@media  screen and (max-width: 650px) {
+    .MovieChairBack{
+        top: 20px;
+        min-height: 60px !important;
+        min-width: 130px !important;
+    }
+    #MovieChairArmLeft{
+        left: 10px;
+    }
+    #MovieChairArmRight{
+        left: 80px;
+    }
+}

@@ -1,0 +1,43 @@
+
+.home-page{
+    margin-top: 200px;
+    z-index: 1;
+    position: relative;
+    background-color: rgb(255, 255, 255);
+}
+
+.welcomeDiv{
+    position: relative;
+    top: -70px;
+    left: -25px;
+    background-color: white;
+    width: 450px;
+    border-radius: 10rem;
+    padding: 5px;
+    justify-content: center;
+    text-align: center;
+    font-weight: 900;
+}
+
+.desk-scene-container{
+    position: relative;
+    background-color: rgb(48, 48, 48);
+    top: -100px;
+    height: 600px;
+    width: 100%;
+}
+
+
+.setup-container{
+    position: relative;
+    min-height: 250px;
+    max-width: fit-content;
+    left: 35%;
+    top: 25%;
+}
+
+
+
+
+
+
